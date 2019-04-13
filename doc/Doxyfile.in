@@ -1,0 +1,12 @@
+PROJECT_NAME         = Tesela
+PROJECT_NUMBER       = @PROJECT_VERSION@
+OUTPUT_DIRECTORY     = @DOXYGEN_OUTPUT_DIR@
+OUTPUT_LANGUAGE      = English
+EXTRACT_ALL          = YES
+ENABLE_PREPROCESSING = YES
+PREDEFINED           = DOXYGEN_SHOULD_SKIP_THIS
+INPUT                = @DOXYGEN_INPUT_DIR@/doc/doxygen_defs.hpp @DOXYGEN_INPUT_DIR@/include/cynodelic/tesela/ @DOXYGEN_INPUT_DIR@/include/cynodelic/tesela/exceptions/ @DOXYGEN_INPUT_DIR@/include/cynodelic/tesela/formats/ @DOXYGEN_INPUT_DIR@/include/cynodelic/tesela/utilities/ @DOXYGEN_INPUT_DIR@/include/cynodelic/tesela/utilities/filters/ @DOXYGEN_INPUT_DIR@/include/cynodelic/tesela/utilities/convert/ @DOXYGEN_INPUT_DIR@/include/cynodelic/tesela/utilities/transformations/ @DOXYGEN_INPUT_DIR@/include/cynodelic/tesela/traits/
+RECURSIVE            = NO
+PDF_HYPERLINKS       = YES
+USE_PDFLATEX         = NO
+HAVE_DOT             = YES

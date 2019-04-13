@@ -1,0 +1,12 @@
+PROJECT_NAME         = Tesela
+PROJECT_NUMBER       = 2.0.0
+OUTPUT_DIRECTORY     = C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/build/doc/cynodelic/tesela
+OUTPUT_LANGUAGE      = English
+EXTRACT_ALL          = YES
+ENABLE_PREPROCESSING = YES
+PREDEFINED           = DOXYGEN_SHOULD_SKIP_THIS
+INPUT                = C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/doc/doxygen_defs.hpp C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/include/cynodelic/tesela/ C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/include/cynodelic/tesela/exceptions/ C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/include/cynodelic/tesela/formats/ C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/include/cynodelic/tesela/utilities/ C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/include/cynodelic/tesela/utilities/filters/ C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/include/cynodelic/tesela/utilities/convert/ C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/include/cynodelic/tesela/utilities/transformations/ C:/Users/alvar/Desktop/cxx_stuff/tesela_2.0.0/include/cynodelic/tesela/traits/
+RECURSIVE            = NO
+PDF_HYPERLINKS       = YES
+USE_PDFLATEX         = NO
+HAVE_DOT             = YES
