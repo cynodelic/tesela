@@ -1,0 +1,87 @@
+// Copyright (c) 2019 Álvaro Ceballos
+// Distributed under the Boost Software License, Version 1.0.
+// See accompanying file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt
+
+#ifndef CYNODELIC_TESELA_TEST_CORE_LITERALS_HPP
+#define CYNODELIC_TESELA_TEST_CORE_LITERALS_HPP
+
+
+CYNODELIC_TESTER_TEST_CASE(literals);
+
+CYNODELIC_TESTER_SECTION(literals,tdouble)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0.0_td,tsl::tdouble(0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(1.0_td,tsl::tdouble(1.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0.341176470588235303_td,tsl::tdouble(0.341176470588235303));
+}
+
+CYNODELIC_TESTER_SECTION(literals,rgb_t)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0x000000_hrgb,tsl::rgb_t(0,0,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xff0000_hrgb,tsl::rgb_t(255,0,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00ff00_hrgb,tsl::rgb_t(0,255,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x0000ff_hrgb,tsl::rgb_t(0,0,255));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xffffff_hrgb,tsl::rgb_t(255,255,255));
+}
+
+CYNODELIC_TESTER_SECTION(literals,nrgb_t)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0x000000_hnrgb,tsl::nrgb_t(0.0,0.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xff0000_hnrgb,tsl::nrgb_t(1.0,0.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00ff00_hnrgb,tsl::nrgb_t(0.0,1.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x0000ff_hnrgb,tsl::nrgb_t(0.0,0.0,1.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xffffff_hnrgb,tsl::nrgb_t(1.0,1.0,1.0));
+}
+
+CYNODELIC_TESTER_SECTION(literals,rgba_t)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00000000_hrgba,tsl::rgba_t(0,0,0,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xff000000_hrgba,tsl::rgba_t(255,0,0,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00ff0000_hrgba,tsl::rgba_t(0,255,0,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x0000ff00_hrgba,tsl::rgba_t(0,0,255,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x000000ff_hrgba,tsl::rgba_t(0,0,0,255));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xffffffff_hrgba,tsl::rgba_t(255,255,255,255));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xf10aa56c_hrgba,tsl::rgba_t(241,10,165,108));
+}
+
+CYNODELIC_TESTER_SECTION(literals,nrgba_t)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00000000_hnrgba,tsl::nrgba_t(0.0,0.0,0.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xff000000_hnrgba,tsl::nrgba_t(1.0,0.0,0.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00ff0000_hnrgba,tsl::nrgba_t(0.0,1.0,0.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x0000ff00_hnrgba,tsl::nrgba_t(0.0,0.0,1.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x000000ff_hnrgba,tsl::nrgba_t(0.0,0.0,0.0,1.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xffffffff_hnrgba,tsl::nrgba_t(1.0,1.0,1.0,1.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x5f709adb_hnrgba,tsl::nrgba_t(95.0/255.0,112.0/255.0,154.0/255.0,219.0/255.0));
+}
+
+CYNODELIC_TESTER_SECTION(literals,gray_t)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00_hgray,tsl::gray_t(0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xff_hgray,tsl::gray_t(255));
+}
+
+CYNODELIC_TESTER_SECTION(literals,ngray_t)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00_hngray,tsl::ngray_t(0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xff_hngray,tsl::ngray_t(1.0));
+}
+
+CYNODELIC_TESTER_SECTION(literals,ga_t)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0x0000_hga,tsl::ga_t(0,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xff00_hga,tsl::ga_t(255,0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00ff_hga,tsl::ga_t(0,255));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xffff_hga,tsl::ga_t(255,255));
+}
+
+CYNODELIC_TESTER_SECTION(literals,nga_t)
+{
+	CYNODELIC_TESTER_CHECK_EQUALS(0x0000_hnga,tsl::nga_t(0.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xff00_hnga,tsl::nga_t(1.0,0.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0x00ff_hnga,tsl::nga_t(0.0,1.0));
+	CYNODELIC_TESTER_CHECK_EQUALS(0xffff_hnga,tsl::nga_t(1.0,1.0));
+}
+
+
+#endif // CYNODELIC_TESELA_TEST_CORE_LITERALS_HPP
