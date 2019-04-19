@@ -28,3 +28,7 @@ install(DIRECTORY ${DOXYGEN_OUTPUT_DIR}
 	DESTINATION ${CMAKE_INSTALL_PREFIX}/doc/cynodelic
 	COMPONENT doc
 )
+
+install(FILES ${PROJECT_SOURCE_DIR}/doc/cynodelic_tesela_tagfile.tag
+	DESTINATION ${CMAKE_INSTALL_PREFIX}/doc/cynodelic/tesela
+)

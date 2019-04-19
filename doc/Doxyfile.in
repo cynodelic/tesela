@@ -10,3 +10,4 @@ RECURSIVE            = NO
 PDF_HYPERLINKS       = YES
 USE_PDFLATEX         = NO
 HAVE_DOT             = YES
+GENERATE_TAGFILE     = @DOXYGEN_INPUT_DIR@/doc/cynodelic_tesela_tagfile.tag
