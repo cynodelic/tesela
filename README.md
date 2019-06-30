@@ -4,7 +4,7 @@ A header-only C++14 library for image input/output and processing.
 ## Requirements
 
 - A C++14-compatible compiler
-- OpenMP (not necessary)
+- OpenMP (optional)
 
 ### For input/output
 - [libjpeg](http://libjpeg.sourceforge.net/)
